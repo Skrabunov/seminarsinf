@@ -1,0 +1,2 @@
+# seminarsinf
+Files for seminars
