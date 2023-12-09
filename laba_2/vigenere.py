@@ -14,12 +14,6 @@ def decoding(line):
     code="столлман" #Клод Шеннон и 1945 год спасли!)
     code = code*(len(line)//4+1)
     alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-    alphabet_square = [0]*33
-    alphabet_square[0]=alphabet
-    for i in range(1,33):
-        alphabet_square[i] = alphabet[1:]+alphabet[0]
-        alphabet = alphabet_square[i]
-    alphabet=alphabet_square[0]
     solver_first = {}
     for i in range(33):
         solver_first[alphabet[i]]=i
